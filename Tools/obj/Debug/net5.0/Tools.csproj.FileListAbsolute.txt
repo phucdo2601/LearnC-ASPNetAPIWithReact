@@ -1,0 +1,12 @@
+D:\TuHocLapTrinh\CSharp\ASPNetCore\LearnNETCoreWithEFCore\LearnC-ASPNetAPIWithReact\Tools\bin\Debug\net5.0\Tools.deps.json
+D:\TuHocLapTrinh\CSharp\ASPNetCore\LearnNETCoreWithEFCore\LearnC-ASPNetAPIWithReact\Tools\bin\Debug\net5.0\Tools.dll
+D:\TuHocLapTrinh\CSharp\ASPNetCore\LearnNETCoreWithEFCore\LearnC-ASPNetAPIWithReact\Tools\bin\Debug\net5.0\ref\Tools.dll
+D:\TuHocLapTrinh\CSharp\ASPNetCore\LearnNETCoreWithEFCore\LearnC-ASPNetAPIWithReact\Tools\bin\Debug\net5.0\Tools.pdb
+D:\TuHocLapTrinh\CSharp\ASPNetCore\LearnNETCoreWithEFCore\LearnC-ASPNetAPIWithReact\Tools\obj\Debug\net5.0\Tools.csproj.AssemblyReference.cache
+D:\TuHocLapTrinh\CSharp\ASPNetCore\LearnNETCoreWithEFCore\LearnC-ASPNetAPIWithReact\Tools\obj\Debug\net5.0\Tools.GeneratedMSBuildEditorConfig.editorconfig
+D:\TuHocLapTrinh\CSharp\ASPNetCore\LearnNETCoreWithEFCore\LearnC-ASPNetAPIWithReact\Tools\obj\Debug\net5.0\Tools.AssemblyInfoInputs.cache
+D:\TuHocLapTrinh\CSharp\ASPNetCore\LearnNETCoreWithEFCore\LearnC-ASPNetAPIWithReact\Tools\obj\Debug\net5.0\Tools.AssemblyInfo.cs
+D:\TuHocLapTrinh\CSharp\ASPNetCore\LearnNETCoreWithEFCore\LearnC-ASPNetAPIWithReact\Tools\obj\Debug\net5.0\Tools.csproj.CoreCompileInputs.cache
+D:\TuHocLapTrinh\CSharp\ASPNetCore\LearnNETCoreWithEFCore\LearnC-ASPNetAPIWithReact\Tools\obj\Debug\net5.0\Tools.dll
+D:\TuHocLapTrinh\CSharp\ASPNetCore\LearnNETCoreWithEFCore\LearnC-ASPNetAPIWithReact\Tools\obj\Debug\net5.0\ref\Tools.dll
+D:\TuHocLapTrinh\CSharp\ASPNetCore\LearnNETCoreWithEFCore\LearnC-ASPNetAPIWithReact\Tools\obj\Debug\net5.0\Tools.pdb

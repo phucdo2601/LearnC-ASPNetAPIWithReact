@@ -4,6 +4,7 @@ using InventoryBeginners.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
+using Tools;
 
 namespace InventoryBeginners.Repositories
 {
@@ -31,9 +32,34 @@ namespace InventoryBeginners.Repositories
             return unit;
         }
 
-        public List<Unit> GetItems()
+        public List<Unit> GetItems(string SortProperty, SortOrder sortOrder)
         {
             List<Unit> units = _context.Units.ToList();
+
+            if (SortProperty.ToLower().Equals("name"))
+            {
+                if (sortOrder.Equals(SortOrder.Ascending))
+                {
+                    units = units.OrderBy(n => n.Name).ToList();
+                }
+                else
+                {
+                    units = units.OrderByDescending(n => n.Name).ToList();
+                }
+            }
+            else if (SortProperty.ToLower().Equals("description"))
+            {
+                if (sortOrder.Equals(SortOrder.Ascending))
+                {
+                    units = units.OrderBy(n => n.Description).ToList();
+                }
+                else
+                {
+                    units = units.OrderByDescending(n => n.Description).ToList();
+                }
+            }
+           
+
             return units;
         }
 

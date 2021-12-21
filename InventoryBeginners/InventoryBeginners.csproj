@@ -15,4 +15,14 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Tools\Tools.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Tools">
+      <HintPath>References\Tools.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

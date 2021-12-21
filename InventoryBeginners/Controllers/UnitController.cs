@@ -1,32 +1,41 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using InventoryBeginners.Data;
 using InventoryBeginners.Models;
 using System.Collections.Generic;
-using System.Linq;
+
 using System;
 using InventoryBeginners.BaseRepos;
+using Tools;
 
 namespace InventoryBeginners.Controllers
 {
     public class UnitController : Controller
     {
-        public IActionResult Index() // return method of the crud operations. It lists all data from the Units table.
-        {
-           /* List<Unit> units = _context.Units.ToList();*/
 
-            List<Unit> units = _unitRepo.GetItems();
+        private readonly IUnitGennericRepository _unitRepo;
+
+        public UnitController(IUnitGennericRepository unitRepo)
+        {
+            _unitRepo = unitRepo;
+        }
+
+        
+
+        public IActionResult Index(string sortExpression="") // return method of the crud operations. It lists all data from the Units table.
+        {
+            /* List<Unit> units = _context.Units.ToList();*/
+
+            SortModel sortModel = new SortModel();
+
+            sortModel.AddColumn("name");
+            sortModel.AddColumn("description");
+            sortModel.ApplySort(sortExpression);
+            ViewData["sortModel"] = sortModel;
+
+            List<Unit> units = _unitRepo.GetItems(sortModel.SortedProperty, sortModel.SortedOrder);
             return View(units);
         }
 
-        private readonly InventoryContext _context;
-        private readonly IUnitGennericRepository _unitRepo;
-
-        public UnitController(InventoryContext context, IUnitGennericRepository unitRepo)
-        {
-            _context = context;
-            _unitRepo = unitRepo;
-        }
+        
 
         public IActionResult Create()
         {

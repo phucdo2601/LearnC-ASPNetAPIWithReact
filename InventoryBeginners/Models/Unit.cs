@@ -5,6 +5,7 @@ namespace InventoryBeginners.Models
 {
     public class Unit
     {
+
         [Key]
         public int Id { get; set; } 
 

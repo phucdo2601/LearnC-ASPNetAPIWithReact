@@ -432,3 +432,5 @@ D:\TuHocLapTrinh\CSharp\ASPNetCore\LearnNETCoreWithEFCore\LearnC-ASPNetAPIWithRe
 D:\TuHocLapTrinh\CSharp\ASPNetCore\LearnNETCoreWithEFCore\LearnC-ASPNetAPIWithReact\InventoryBeginners\obj\Debug\net5.0\Razor\Views\Unit\Details.cshtml.g.cs
 D:\TuHocLapTrinh\CSharp\ASPNetCore\LearnNETCoreWithEFCore\LearnC-ASPNetAPIWithReact\InventoryBeginners\obj\Debug\net5.0\Razor\Views\Unit\Edit.cshtml.g.cs
 D:\TuHocLapTrinh\CSharp\ASPNetCore\LearnNETCoreWithEFCore\LearnC-ASPNetAPIWithReact\InventoryBeginners\obj\Debug\net5.0\Razor\Views\Unit\Delete.cshtml.g.cs
+D:\TuHocLapTrinh\CSharp\ASPNetCore\LearnNETCoreWithEFCore\LearnC-ASPNetAPIWithReact\InventoryBeginners\obj\Debug\net5.0\InventoryBeginners.csproj.AssemblyReference.cache
+D:\TuHocLapTrinh\CSharp\ASPNetCore\LearnNETCoreWithEFCore\LearnC-ASPNetAPIWithReact\InventoryBeginners\bin\Debug\net5.0\Tools.dll

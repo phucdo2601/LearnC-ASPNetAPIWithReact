@@ -1,11 +1,12 @@
 ﻿using InventoryBeginners.Models;
 using System.Collections.Generic;
+using Tools;
 
 namespace InventoryBeginners.BaseRepos
 {
     public interface IUnitGennericRepository
     {
-        List<Unit> GetItems();
+        List<Unit> GetItems(string SortProperty, SortOrder sortOrder);
 
         Unit GetUnit(int id);
 
