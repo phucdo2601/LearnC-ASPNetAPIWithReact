@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -24,5 +25,15 @@ namespace MyWebAPIApp.Data
         public int? MaLoai { get; set; }
         [ForeignKey(name: "MaLoai")]
         public Loai Loai { get; set; }
+
+        // Relationship with the child table - DonHangChiTiet
+        public ICollection<DonHangChiTiet> DonHangChiTiets { get; set; }
+
+        //tra DonHangChiTiets la mot mang rong 
+        public HangHoa()
+        {
+            DonHangChiTiets = new List<DonHangChiTiet>();
+
+        }
     }
 }
