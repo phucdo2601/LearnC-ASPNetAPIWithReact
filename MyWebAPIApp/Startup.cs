@@ -11,6 +11,9 @@ using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using MyWebAPIApp.Data;
+using MyWebAPIApp.Services;
+using MyWebAPIApp.Services.Impl;
+using MyWebAPIApp.Services.InMemory;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,6 +46,12 @@ namespace MyWebAPIApp
             // Config Authorization
             var secretKey = Configuration["AppSettings:SecretKey"];
             var secretKeyBytes = Encoding.UTF8.GetBytes(secretKey);
+
+            // Add Repsitory: phai add scope cua nhung repository da khai bao cung nhu implement thi moi su dung dc
+            services.AddScoped<ILoaiRepository, LoaiRepository>();
+
+            //repo loai luu tru trong bo nho
+            //services.AddScoped<ILoaiRepository, LoaiRepositoryInMemory>();
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
             {
